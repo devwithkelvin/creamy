@@ -6,15 +6,15 @@ export const Features = () => {
     return (
         <div className='p-6'>
 
-            {/* Logo centered */}
+   
             <div className='flex items-center justify-center w-full mb-8'>
                 <img src={logo_img.src} alt="logo" />
             </div>
 
-            {/* Main section */}
+
             <section className='flex flex-col md:flex-row items-end-safe justify-center gap-10 p-4'>
                 
-                {/* Left content */}
+              
                 <div className='flex flex-col gap-6 flex-1'>
                     <h2 className='text-3xl md:text-4xl font-bold leading-tight text-primary'>
                         The artisan way, no compromise
@@ -27,14 +27,13 @@ export const Features = () => {
                         <ArrowUpRight size={16} />
                     </button>
 
-                    {/* Two small images */}
+         
                 <div className='flex gap-4 mt-8 w-full'>
     <img className='w-1/2 object-contain' src={ice_2.src} alt="ice cream 1" />
     <img className='w-1/2 object-contain' src={ice_4.src} alt="ice cream 2" />
 </div>
                 </div>
 
-                {/* Right large image */}
                 <div className='flex-1 flex justify-center'>
                     <img className='w-full max-w-sm object-contain' src={ice_3.src} alt="ice cream 3" />
                 </div>

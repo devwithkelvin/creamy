@@ -24,7 +24,7 @@ export const Limited = () => {
   return (
     <div className='p-8 md:p-16'>
 
-      {/* Top centered text */}
+
       <div className='flex flex-col items-center text-center mb-12'>
         <p className='text-sm mb-2'>Limited</p>
         <h3 className='text-3xl md:text-4xl font-bold text-primary mb-4'>
@@ -38,7 +38,7 @@ export const Limited = () => {
         </button>
       </div>
 
-      {/* Bottom — steps left, image right */}
+     
       <div className='flex flex-col md:flex-row gap-10 items-center'>
 
         {/* Steps */}
@@ -51,7 +51,6 @@ export const Limited = () => {
           ))}
         </div>
 
-        {/* Image with brown circle behind */}
         <div className='flex-1 flex items-center justify-center relative'>
           <div className='absolute md:w-130 h-90 w-90 md:h-110 bg-[#8B4513] rounded-full opacity-80' />
           <img

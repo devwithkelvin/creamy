@@ -15,7 +15,7 @@ export const Hero = () => {
         <section>
             <div className='md:flex mt-24 items-center xs:flex-col gap-5'>
 
-                {/* Left side */}
+          
                 <div className='relative p-2 space-y-5'>
                     <div className='relative z-10 space-y-5'>
 
@@ -44,16 +44,16 @@ export const Hero = () => {
                     </div>
                 </div>
 
-                {/* Right image */}
+     
                 <img className={`w-150 transition-all duration-700 delay-300 ease-out ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'}`} src={hero_img.src} alt="" />
 
             </div>
 
-            {/* Bottom bar */}
+
             <div className={`w-full bg-primary p-8 transition-all duration-500 delay-700 ease-out ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
                 <div className='md:flex justify-between items-center text-background'>
 
-                    {/* Star Rating */}
+                   
                     <div className='flex flex-col gap-2 p-4'>
                         <div className='flex gap-1'>
                             {[...Array(5)].map((_, i) => (
@@ -64,10 +64,10 @@ export const Hero = () => {
                         <p className='text-xs opacity-70'>From 20+ happy customers</p>
                     </div>
 
-                    {/* Divider */}
+           
                     <div className='hidden md:block h-16 w-px bg-background opacity-30' />
 
-                    {/* Description */}
+                
                     <p className='md:max-w-100 text-xs md:p-6 text-left xs:text-center p-4'>
                         Come for the cones, stay for the smiles! Step into our bright, family-friendly parlor and treat yourself to our rotating menu of dairy-free options, rich milkshakes, and warm waffle bowls. We're on a mission to bring pure happiness to every bite.
                     </p>

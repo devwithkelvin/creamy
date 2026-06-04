@@ -18,7 +18,7 @@ export const Flavours = () => {
                 These drops won't last. Each batch is small. Each flavor is seasonal. Order now or wait until next time.
             </p>
 
-            {/* Grid — 1 col mobile, 3 col md+ */}
+
             <div className='grid grid-cols-1 md:grid-cols-3 gap-3 p-3'>
                 {arr.map((item) => (
                     <div key={item.id} className='bg-[#FBE3E3] p-2 rounded-xs'>
@@ -31,7 +31,7 @@ export const Flavours = () => {
                 ))}
             </div>
 
-            {/* Centered button */}
+  
             <div className='flex justify-center mt-6'>
                 <button className='bg-primary text-white px-6 py-3 text-sm rounded-xs border border-black'>
                     View All

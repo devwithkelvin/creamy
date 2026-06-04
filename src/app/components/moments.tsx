@@ -11,7 +11,7 @@ export const Moments = () => {
   const [direction, setDirection] = useState<'left' | 'right'>('right')
   const containerRef = useRef<HTMLDivElement>(null)
 
-  // Mount animation
+  // Mounting animation
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 100)
     return () => clearTimeout(timer)
@@ -31,14 +31,13 @@ export const Moments = () => {
     }, 300)
   }
 
-  // Visible images — show 3 at a time
   const visibleImages = [0, 1, 2].map(offset => images[(current + offset) % images.length])
 
   return (
     <div
       className={`bg-[#D4956A] p-8 md:p-12 transition-all duration-700 ease-out ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
     >
-      {/* Header */}
+     
       <div className='flex justify-between items-start mb-6'>
         <div className='max-w-sm'>
           <h2 className='text-2xl md:text-3xl text-center font-bold text-primary mb-2'>Real moments, real taste</h2>
@@ -46,14 +45,14 @@ export const Moments = () => {
             Start with vanilla, chocolate, or a seasonal cream. This is the foundation of everything.
           </p>
         </div>
-        {/* Circle decorations top right */}
+     
         <div className='hidden md:flex gap-2'>
           <div className='w-6 h-6 rounded-full border-2 border-primary' />
           <div className='w-6 h-6 rounded-full border-2 border-primary' />
         </div>
       </div>
 
-      {/* Images */}
+
       <div
         ref={containerRef}
         className={`flex gap-4 overflow-hidden transition-all duration-300 ease-in-out ${
@@ -78,10 +77,9 @@ export const Moments = () => {
         ))}
       </div>
 
-      {/* Footer — dots + arrows */}
+
       <div className='flex justify-between items-center mt-6'>
 
-        {/* Dots */}
         <div className='flex gap-2'>
           {images.map((_, i) => (
             <button
@@ -98,7 +96,7 @@ export const Moments = () => {
           ))}
         </div>
 
-        {/* Arrow buttons */}
+   
         <div className='flex gap-3'>
           <button
             onClick={() => navigate('left')}

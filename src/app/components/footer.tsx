@@ -7,10 +7,10 @@ export const Footer = () => {
   return (
     <footer className='bg-primary text-background px-8 md:px-16 py-12'>
 
-      {/* Top */}
+
       <div className='flex flex-col md:flex-row justify-between gap-10 mb-12'>
 
-        {/* Brand */}
+
         <div className='flex flex-col gap-4 max-w-xs'>
           <Image src={logoImg} alt="logo" />
           <p className='text-sm font-light opacity-70'>
@@ -18,7 +18,7 @@ export const Footer = () => {
           </p>
         </div>
 
-        {/* Links */}
+
         <div className='flex flex-col gap-3'>
           <p className='font-semibold text-sm mb-2'>Explore</p>
           {['Products', 'Flavours', 'Moments', 'Build Your Own'].map((link) => (
@@ -28,7 +28,7 @@ export const Footer = () => {
           ))}
         </div>
 
-        {/* Contact */}
+
         <div className='flex flex-col gap-3'>
           <p className='font-semibold text-sm mb-2'>Contact</p>
           <p className='text-sm opacity-70'>hello@kelvin.com</p>
@@ -36,7 +36,7 @@ export const Footer = () => {
           <p className='text-sm opacity-70'>Nairobi, Kenya</p>
         </div>
 
-        {/* Newsletter */}
+
         <div className='flex flex-col gap-3 max-w-xs'>
           <p className='font-semibold text-sm mb-2'>Stay in the loop</p>
           <p className='text-sm opacity-70'>Get notified when new flavours drop.</p>
@@ -54,7 +54,7 @@ export const Footer = () => {
 
       </div>
 
-      {/* Divider */}
+
       <div className='border-t border-background/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-4'>
         <p className='text-xs opacity-50'>© 2026 Devwithkelvin. All rights reserved.</p>
         <div className='flex gap-6'>
